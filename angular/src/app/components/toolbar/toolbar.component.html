@@ -1,0 +1,13 @@
+<mat-toolbar>
+    {{ 'Translation' | translate }}
+    <ng-container>
+        <button mat-button [matMenuTriggerFor]="menu">
+        {{ 'Change language' | translate }}
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item *ngFor="let language of languages" (click)="handleUseLanguage(language)">
+            {{ language | translate }}
+          </button>
+        </mat-menu>
+    </ng-container>
+</mat-toolbar>
