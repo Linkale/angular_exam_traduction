@@ -6,7 +6,7 @@ ngx-translate offre une syntaxe plus simple et plus lisible pour les fichiers de
 Les fonctionnalités supplémentaires de ngx-translate permet de plus facilement à accéder à certains points.
 On peut rapidement accéder à certaines choses notamment via la fonction `getBrowserLang` qui permet d'aller chercher directement la langue mis en favoris sur le navigateur. La prise en charge de la localisation est donc bien plus simplifiée.
 
-Un des inconvénients que l'on peut noter c'est le fait que ce soit un paquet externe et qu'il faut donc s'informer s'il y a bien été mis à jour. 
+Un des inconvénients que l'on peut noter c'est le fait que ce soit un paquet externe et qu'il faut donc s'informer s'il a bien été mis à jour. 
 
 
 
