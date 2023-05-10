@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { ListComponent } from './components/list/list.component';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ListComponent
   ],
   imports: [
+    FormsModule, ReactiveFormsModule, 
     BrowserModule, BrowserAnimationsModule, MatListModule, 
     MatToolbarModule, MatIconModule, MatMenuModule, MatButtonModule, MatCardModule, 
     HttpClientModule,

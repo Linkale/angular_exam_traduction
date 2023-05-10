@@ -6,5 +6,8 @@
     "Trips": "Trips",
     "Italy": "Italy",
     "Germany": "Germany",
-    "Spain": "Spain"
+    "Spain": "Spain",
+    "REQUIRED": "required",
+    "Name": "Name",
+    "Age": "age"
 }

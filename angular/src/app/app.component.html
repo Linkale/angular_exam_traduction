@@ -5,3 +5,19 @@
 <div class="center">
   <app-list></app-list>
 </div>
+<div class="center">
+  <form class="form-group" [formGroup]="form">
+    <label>{{'Name' | translate}}:</label>
+    <input type="text" class="form-control" id="name" [formControl]="name" name="name" >
+    <div *ngIf="name.errors?.['required']">
+      {{'REQUIRED' | translate}}
+    </div>
+  
+    <label>{{'Age' | translate}}:</label>
+    <input type="text"  class="form-control" [formControl]="age" name="age">
+    <div *ngIf="age.errors?.['required']">
+      {{'REQUIRED' | translate}}
+    </div>
+    <button class="btn btn-primary" type="submit">{{'Submit' | translate}}</button>
+  </form>
+</div>
